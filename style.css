@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B1120;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.planner-container {
+    max-width: 760px;
+}
+
+.title-gradient {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ffffff, #60A5FA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* App Card */
+.app-card {
+    background: #111827;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Form Input */
+.custom-input {
+    background: #0B1120 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px 0 0 12px !important;
+}
+
+.custom-input:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.2) !important;
+}
+
+.custom-btn {
+    background: #3B82F6 !important;
+    border-color: #3B82F6 !important;
+    border-radius: 0 12px 12px 0 !important;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background: #2563EB !important;
+}
+
+/* Status Badges */
+.status-pill {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60A5FA;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.completed-pill {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34D399;
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Filter Controls */
+.filter-group {
+    background: #0B1120;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.filter-btn {
+    background: transparent;
+    color: #94A3B8;
+    border: none;
+    border-radius: 8px !important;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    color: #ffffff;
+}
+
+.filter-btn.active {
+    background: #3B82F6 !important;
+    color: #ffffff !important;
+}
+
+/* Task Item */
+.task-item {
+    background: #0B1120 !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 12px !important;
+    padding: 14px 18px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.task-item:hover {
+    border-color: rgba(59, 130, 246, 0.3) !important;
+    transform: translateY(-2px);
+}
+
+.task-text {
+    color: #E2E8F0;
+    font-size: 15px;
+    word-break: break-word;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Completed Strike-Through Style */
+.task-completed .task-text {
+    text-decoration: line-through;
+    color: #64748B;
+}
+
+.task-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    background-color: #1E293B;
+    border-color: #475569;
+}
+
+.task-checkbox:checked {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+.action-btn {
+    background: transparent;
+    border: none;
+    color: #94A3B8;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.action-btn.delete-btn:hover {
+    color: #EF4444;
+}
+
+.hover-underline:hover {
+    text-decoration: underline !important;
+}
